@@ -1,0 +1,395 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --color-black1:#151515;   
+     --color-black2:#00000;
+     --shadow-color:#c0c0c0;
+     --shadow-white:white;
+     --box-shadow: 0 0 10px var(var(--box-shadow));
+     --transition: .4s ease; 
+
+}
+body{
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    color: var(--color-black1);
+
+
+}
+
+h1,h2,h3,h4,h5{
+    color: var(--color-black1);
+
+}
+h1{
+    font-size: 60px;
+
+}
+
+h2{
+    font-size: 55px;
+}
+h3{
+    font-size: 32px;
+}
+
+h4{
+    font-size: 24px;
+}
+
+h5{
+font-size: 20px;
+}
+p{
+    font-size: 19px;
+}
+a{
+    font-size: 19px;
+    color: var(--color-black2);
+}
+.btn{
+    display: inline-block;
+    width: fit-content;
+    padding: 10px 40px;
+    background: var(--color-black1);
+    color: var(--shadow-white);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn:hover{
+    opacity: .8;
+}
+
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+section{
+    padding-top: 120px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    height: 1200px;
+}
+
+nav{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10;
+    background-color: var(--shadow-white);
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    height: 52px;
+}
+.navlinks{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+ }
+
+
+.navlinks li a{
+    border-bottom: 3px solid transparent;
+    padding-bottom: 2px;
+    transition: var(--transition);
+} 
+
+.navlinks li a:hover{
+    border-color: var(--color-black2);
+    color: var(--color-black2);
+}
+
+header{
+    height: 100vh;
+    align-items: center;
+    display: grid;
+}
+.header-container{
+    display: grid;
+    grid-template-columns: 52% auto;
+    gap: 80px;
+    align-items: center;
+}
+.container .header-left{
+    gap: 40px;
+}
+
+.header-container p{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+#About{
+    padding-top: 0 !important;
+}
+
+.about-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 150px;
+    margin-top: 300px;
+    padding: 100px;
+}
+.about-left{
+    border-radius: 20%;
+}
+
+.about-right p{
+    margin-bottom: 1rem;
+}
+.about-right h2{
+    margin-bottom:10px
+}
+
+.myservices{
+margin-top: 90px;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 30px;
+}
+
+.myservices article{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px var(--shadow-color);
+    gap: 30px;
+    border-radius: 15px;
+    padding: 40px 20px;
+    transition: var(--transition);
+}
+.myservices article:hover{
+    box-shadow: none;
+}
+
+.myservices article img{
+    /* max-width: 0px; */
+
+    margin:  auto;
+}
+
+
+.myskills{
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.myskills article{
+    box-shadow: 0 0 10px var(--shadow-color);
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    justify-content: center;
+    transition: var(--transition);
+
+}
+.myskills article:hover{
+    box-shadow: transparent;
+}
+
+.myskills article img{
+    max-width: 220px;
+    padding: 20px;
+    height: 220px;
+    border-radius: 50%;
+}
+
+
+.myworks{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr) ;
+    gap: 30px;
+    margin-top: 90px;
+}
+
+.myworks img{
+    border: 1px solid var(--color-black1);
+    margin-bottom: 20px;
+}
+
+  /* #Contact{
+     margin-left: 650px; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  } */
+
+
+.contact-container{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+     align-items: center; 
+    gap: 20px;
+     align-self: center; 
+    
+}
+
+
+.contact-container .social{
+    display: flex;
+    gap: 20px;
+}
+
+
+.contact-container .social a{
+    transition: var(--transition);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contact-container .social a:hover{
+    opacity: 0.8;
+}
+
+
+footer{
+    padding: 4rem;
+    text-align: center;
+}
+
+.menu{
+    display: none;
+}
+
+@media (max-width:991px) {
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 28px;
+    }
+    h4{
+        font-size:24px ;
+    }
+    h5{
+        font-size:18px ;
+    }
+    .menu{
+        display: flex;
+        background-color: #000017;
+        backdrop-filter: blur(15px);
+        position: fixed;
+        bottom: 2rem;
+        transform: translate(-50%);
+        left: 50%;
+        right: 50%;
+        padding: .8rem 1.8rem;
+        border-radius: 20px;
+        width: fit-content;
+z-index: 10;
+display: flex;
+gap: 20px;
+align-items: center;
+    }
+
+
+    .menu a{
+        font-size:20px;
+        background: var(--shadow-color);
+        border-radius: 50%;
+        display:flex;
+        padding: .8rem;
+        transition: var(--transition);
+    }
+    .menu a:hover{
+        background-color: var(--color-black1);
+        color: var(--shadow-white);
+    }
+
+    .navlinks{
+        display: none;
+    }
+    .logo{
+        margin: auto;
+    }
+
+    header{
+height: auto; 
+padding-top: 200px;   }
+    #About{
+        padding-top: 120px !important;
+    }
+    .about-container{
+        gap: 100px;
+    }
+
+    .myservices{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:700px) {
+
+    h1{
+        font-size: 46px;
+    }
+    h2{
+        font-size: 38px;
+    }
+    p{
+        font-size:18px ;
+    }
+    body{
+        font-size: 18px;
+    }
+    nav{
+        height: 4.4rem;
+        background-color: #151515;
+        backdrop-filter: blur(15px);
+    }
+    header{
+        padding-top:140px ;
+    }
+    .header-container{
+gap: 30px;
+        grid-template-columns: 1fr;
+    }
+    .header-right{
+        grid-row: 1; width: 80%;
+        margin: auto;
+}
+.header-left{
+    text-align: center;
+}
+.about-container{
+    grid-template-columns: 1fr;
+    gap: 40px;
+
+}
+.about-left{
+    width: 70%;
+    margin: auto;
+}
+.myservices, .myskills .myworks{
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+}
+}
